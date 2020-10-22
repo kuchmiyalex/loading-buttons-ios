@@ -57,8 +57,10 @@ open class LoadingButton: UIButton {
         case fill
         case outline
     }
+
+    open var bgColor: UIColor = .lightGray
+
     // Private properties
-    private(set) var bgColor: UIColor = .lightGray
     private var loaderWorkItem: DispatchWorkItem?
     // Init
     public override init(frame: CGRect) {
